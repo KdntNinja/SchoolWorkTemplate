@@ -17,7 +17,7 @@ class DocsTemplateInterface:
             shutil.copy2("template.docx", self.template_copy_path)
 
     def __init__(self):
-        self.subjects: list = ["English", "Biology", "Chemistry", "Physics"]
+        self.subjects: list = ["English", "Geography", "Biology", "Chemistry", "Physics"]
         self.subject: int = 0
         self.subject_menu = (
             "\n".join(f"({i}) {self.subjects[i]}" for i in range(len(self.subjects)))
